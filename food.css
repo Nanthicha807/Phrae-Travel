@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #f9f9f9;
+    padding: 10px 0;
+    z-index: 1000;
+    
+}
+#logo{
+    font-size: 39px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #B17457;
+}
+.navbar-toggler span{
+    color: #B17457;
+}
+.navbar-nav{
+    margin-left: 36px;
+}
+.nav-item .nav-link{
+    font-size: 20px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #B17457;
+    color: rgb(255, 255, 255);
+}
+#navbar form button{
+    background: #B17457;
+    color: white;
+    border: none;
+}
+
+.phrae{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.phrae .card{
+    border-radius: 10px;
+}
+.phrae .card img{
+    border-radius: 10px;
+}
+.phrae h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.phrae p{
+    font-weight: 500;
+    text-align: justify;
+    text-transform: lowercase;
+}
+#phrae-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #B17457;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#phrae-btn:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .phrae{
+        padding: 0;
+    }
+}
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./image/p08.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 80px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: " ร่มไม้ใหญ่";}
+    10%{content: "ก๋วยเตี๋ยวห่อตองลุงคง";}
+    20%{content: "จิ้นนึ่งแม่หล่าย";}
+    30%{content: "ภูมิใจเวียดนาม";}
+    40%{content: "บ้านม่อนนกยูง";}
+    50%{content: "ครัวจิ้นสด";}
+    60%{content: "ฮักเส้น";}
+    70%{content: "สวนไซทอง";}
+    80%{content: "ภูมิใจเวียดนาม";}
+    90%{content: "ฮักเส้น";}
+    100%{content: "ครัวจิ้นสด";}
+} 
+.home .content p{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #B17457;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+
+.restaurant{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./image/food.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.restaurant .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.restaurant .content h5{
+    color: white;
+    font-size: 80px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.restaurant .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "ร่มไม้ใหญ่";}
+    10%{content: "ก๋วยเตี๋ยวห่อตองลุงคง";}
+    20%{content: "จิ้นนึ่งแม่หล่าย";}
+    30%{content: "ภูมิใจเวียดนาม";}
+    40%{content: "บ้านม่อนนกยูง";}
+    50%{content: "ครัวจิ้นสด";}
+    60%{content: "ฮักเส้น";}
+    70%{content: "สวนไซทอง";}
+    80%{content: "";}
+    90%{content: "";}
+    100%{content: "";}
+} 
+.restaurant.content p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px rgb(7, 7, 7);
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.restaurant .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.restaurant .content a:hover{
+    background: #B17457;
+    color: white;
+}
+@media (max-width:850px){
+    .restaurant{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .restaurant .content h5{
+        font-size: 25px;
+    }
+    .restaurant .content h1{
+        font-size: 38px;
+    }
+    .restaurant .content p{
+        font-size: 20px;
+    }
+}
+
+.container .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.container .card img{
+    border-radius: 5px;
+}
+.container .card .card-body{
+    background: transparent;
+    text-align: justify;
+}
+.container .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: justify;
+    text-transform: lowercase;
+}
+.container .card .card-body p{
+    font-size: 15px;
+    text-align: justify;
+    text-transform: lowercase;
+}
+.checked{
+    color: #FF8A8A;
+}
+.star i{
+    font-size: 15px;
+}
+.container .card .card-body h6{
+    font-size: 20px;
+}
+.container .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #FF8A8A;
+    color: white;
+    border-radius: 5px;
+}
+
+
+#footer{
+    position: sticky;
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #B17457;
+    padding: 10px 0;
+    z-index: 1000;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px white;
+}
+#footer h1 span{
+    color: #ffffff;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #B17457;
+}
